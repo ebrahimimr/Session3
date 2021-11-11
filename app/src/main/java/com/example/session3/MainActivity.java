@@ -18,14 +18,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         VideoView vview =findViewById(R.id.vview);
-        String url ="https://www.aparat.com/v/UF1gn/%D8%A7%D9%86%D8%A8%D8%A7%DA%A9%D8%B3%DB%8C%D9%86%DA%AF_unboxing_Poco_x3_NFC";
+        String url ="https://hajifirouz5.cdn.asset.aparat.com/aparat-video/07b39a1dcde8485fe330b3050f2e456539429265-480p.mp4?wmsAuthSign=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbiI6IjFhOTU4ZjhhNWY5MTY1YTc4MTQ0ZGZjNjRhMTA1OTU2IiwiZXhwIjoxNjM2NjQ2MTI1LCJpc3MiOiJTYWJhIElkZWEgR1NJRyJ9.3NjIGvZGTZbnJY9PXb5-2dex1E7CHh3VFCAyN6NNcMo";
         vview.setVideoURI(Uri.parse((url)));
-        vview.setMediaController(new MediaController(MainActivity.this));
+        //vview.setMediaController(new MediaController(MainActivity.this));
         vview.start();
 
         WebView wview = findViewById(R.id.wview);
         wview.getSettings().setJavaScriptEnabled(true);
         wview.setWebViewClient(new WebViewClient());
-        wview.loadUrl("http://www.yahoo.com");
+        wview.loadUrl("https://cinematicket.org/");
     }
 }
